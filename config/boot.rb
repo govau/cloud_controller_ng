@@ -8,7 +8,11 @@ require 'bundler/setup' # Set up gems listed in the Gemfile.
 
 # instead of using require 'bootscale/rails' per the docs, we'll
 # instead do what it does, so that we can specify a custom TMPDIR
-require 'bootscale'
-Bootscale.setup(cache_directory: ENV['BOOTSCALE_TMP'] || 'tmp/bootscale')
-require 'bootscale/active_support'
-Bootscale::ActiveSupport.setup
+
+if ENV['BOOTSCALE_ENABLED'] == '1' then
+    require 'bootscale'
+    Bootscale.setup(cache_directory: ENV['BOOTSCALE_TMP'] || 'tmp/bootscale')
+
+    require 'bootscale/active_support'
+    Bootscale::ActiveSupport.setup
+end
