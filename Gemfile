@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'addressable'
 gem 'allowy'
+gem 'bootscale', require: false
 gem 'cf-copilot', git: 'https://github.com/cloudfoundry/copilot', glob: 'sdk/ruby/*.gemspec'
 gem 'clockwork', require: false
 gem 'cloudfront-signer'

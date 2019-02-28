@@ -101,6 +101,7 @@ GEM
     bits_service_client (3.3.0)
       activesupport
       steno
+    bootscale (0.7.0)
     builder (3.2.3)
     byebug (10.0.2)
     cf-perm (0.0.10)
@@ -458,6 +459,7 @@ DEPENDENCIES
   awesome_print
   azure-storage (= 0.14.0.preview)
   bits_service_client (~> 3.0)
+  bootscale
   byebug
   cf-copilot!
   cf-perm (~> 0.0.10)
